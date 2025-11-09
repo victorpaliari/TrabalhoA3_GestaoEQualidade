@@ -12,8 +12,8 @@ Cart = List[Tuple[int, int]]  # (id_item, quantidade)
 
 
 def mostrar_cardapio() -> None:
-    print("Bem-vindo à Hamburgueria!")
-    print("CARDÁPIO:")
+    print("🍔 Bem-vindo à Hamburgueria!")
+    print("\nCARDÁPIO:")
     for i in sorted(MENU.keys()):
         item = MENU[i]
         print(f"{i} - {item['name']} - R${item['price']:.2f}")
@@ -22,34 +22,34 @@ def mostrar_cardapio() -> None:
 
 def ler_opcao() -> int:
     try:
-        return int(input("Digite o número do item (999 para sair): "))
+        return int(input("\nDigite o número do item (999 para sair): "))
     except ValueError:
-        print("Entrada inválida.")
+        print("⚠️ Entrada inválida. Digite um número do cardápio.")
         return -1
 
 
 def ler_quantidade() -> int:
     try:
         q = int(input("Quantidade: "))
+        if q <= 0:
+            print("⚠️ A quantidade deve ser maior que zero.")
+            return -1
         return q
     except ValueError:
-        print("Quantidade inválida.")
+        print("⚠️ Quantidade inválida.")
         return -1
 
 
 def adicionar_ao_carrinho(cart: Cart, item_id: int, qtd: int) -> None:
     cart.append((item_id, qtd))
+    print(f"✅ Adicionado: {qtd}x {MENU[item_id]['name']}")
 
 
 def calcular_total(cart: Cart) -> float:
-    total = 0.0
-    for item_id, qtd in cart:
-        total += MENU[item_id]["price"] * qtd
-    return total
+    return sum(MENU[item_id]["price"] * qtd for item_id, qtd in cart)
 
 
 def resumo_por_item(cart: Cart) -> Dict[int, Dict[str, float]]:
-    """Consolida quantidades e subtotais por item."""
     resumo: Dict[int, Dict[str, float]] = {}
     for item_id, qtd in cart:
         if item_id not in resumo:
@@ -59,6 +59,11 @@ def resumo_por_item(cart: Cart) -> Dict[int, Dict[str, float]]:
     return resumo
 
 
+def confirmar_finalizacao() -> bool:
+    resposta = input("Deseja realmente finalizar o pedido? (s/n): ").strip().lower()
+    return resposta == "s"
+
+
 def main() -> None:
     cart: Cart = []
     mostrar_cardapio()
@@ -66,39 +71,43 @@ def main() -> None:
     while True:
         opcao = ler_opcao()
         if opcao == 999:
-            print("Finalizando pedido...")
-            break
+            if confirmar_finalizacao():
+                print("🧾 Finalizando pedido...")
+                break
+            else:
+                continue
+
         if opcao not in MENU:
-            print("Item inválido.")
+            print("⚠️ Item inválido. Escolha um número do cardápio.")
             continue
 
         qtd = ler_quantidade()
         if qtd <= 0:
-            print("Quantidade deve ser maior que zero.")
             continue
 
         adicionar_ao_carrinho(cart, opcao, qtd)
-        print(f"✓ Adicionado: {qtd}x {MENU[opcao]['name']}")
+
+    if not cart:
+        print("\nNenhum item foi adicionado ao pedido. Até logo! 👋")
+        return
 
     print("\nResumo do pedido:")
     resumo = resumo_por_item(cart)
-    for item_id in sorted(resumo.keys()):
-        name = MENU[item_id]["name"]
-        qtd = int(resumo[item_id]["qtd"])
-        subtotal = resumo[item_id]["subtotal"]
-        print(f"{name}: {qtd} - R$ {subtotal:.2f}")
+    for item_id, dados in resumo.items():
+        print(f"{MENU[item_id]['name']}: {dados['qtd']}x - R${dados['subtotal']:.2f}")
 
     total = calcular_total(cart)
-    print(f"TOTAL: R$ {total:.2f}")
+    print(f"\nTOTAL: R${total:.2f}")
 
     try:
         p = float(input("Valor pago: R$ "))
         if p >= total:
-            print(f"Troco: R$ {p - total:.2f}")
+            print(f"Troco: R${p - total:.2f}")
+            print("🍟 Pedido finalizado com sucesso! Obrigado pela preferência!")
         else:
-            print("Valor insuficiente. Pedido cancelado.")
+            print("💸 Valor insuficiente. Pedido cancelado.")
     except ValueError:
-        print("Valor pago inválido. Pedido cancelado.")
+        print("⚠️ Valor inválido. Pedido cancelado.")
 
 
 if __name__ == "__main__":

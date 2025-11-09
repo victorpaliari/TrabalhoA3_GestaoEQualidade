@@ -1,18 +1,14 @@
-# 🍔 Hamburgueria — Sistema de Pedidos
+# 🍔 Hamburgueria — Trabalho A3 [Gestao E Qualidade de Software]
 
 <p align="center">
   <img src="https://github.com/victorpaliari/TrabalhoA3_GestaoEQualidade/actions/workflows/tests.yml/badge.svg" alt="Tests status">
 </p>
-
-
- # TrabalhoA3_GestaoEQualidade
-
-# 🍔 Hamburgueria em Python
 
 Programa de terminal para registrar pedidos.
 
 ## Como rodar
 ```bash
 python src/main.py
+
 
 

@@ -20,28 +20,27 @@ Trabalho A3 — Gestão e Qualidade de Software
 📝 Descrição
 
 O Hamburgueria Bruttus é um programa de terminal desenvolvido em Python que registra pedidos, calcula valores, aplica quantidades e organiza o fluxo básico de atendimento.
-É um projeto focado em boas práticas, qualidade de software e testes automatizados usando pytest.
-
+É um projeto focado em boas práticas, qualidade de software e testes automatizados usando cleancode e pytest.
 
 🚀 Como rodar o projeto
 
-1️⃣ Clone o repositório
-git clone https://github.com/victorpaliari/TrabalhoA3_GestaoEQualidade.git
-cd TrabalhoA3_GestaoEQualidade
-2️⃣ Crie o ambiente virtual
-python3 -m venv venv
-3️⃣ Ative o ambiente virtual
-macOS / Linux
-> source venv/bin/activate
-Windows (PowerShell)
-> venv\Scripts\activate
-4️⃣ Instale as dependências
-pip install -r requirements.txt
-5️⃣ Rode os testes (opcional, mas recomendado)
-pytest
-6️⃣ Execute o programa
-O arquivo principal está em: hamburgueria/src/main.py
-Para rodar: python3 hamburgueria/src/main.py
+	1️⃣ Clone o repositório
+	git clone https://github.com/victorpaliari/TrabalhoA3_GestaoEQualidade.git
+	cd TrabalhoA3_GestaoEQualidade
+	2️⃣ Crie o ambiente virtual
+	python3 -m venv venv
+	3️⃣ Ative o ambiente virtual
+	macOS / Linux
+	> source venv/bin/activate
+	Windows (PowerShell)
+	> venv\Scripts\activate
+	4️⃣ Instale as dependências
+	pip install -r requirements.txt
+	5️⃣ Rode os testes (opcional, mas recomendado)
+	pytest
+	6️⃣ Execute o programa
+	O arquivo principal está em: hamburgueria/src/main.py
+	Para rodar: python3 hamburgueria/src/main.py
 
 	🖥️ Exemplo de execução
 	<p align="center">
@@ -61,7 +60,7 @@ Para rodar: python3 hamburgueria/src/main.py
 	├── requirements.txt
 	├── pytest.ini
 	└── README.md
-	
+		
 👨‍💻 Autores
 • Victor Paliari
 •	Gustavo Lausen
@@ -69,5 +68,6 @@ Para rodar: python3 hamburgueria/src/main.py
 •	Jonathan 
 •	Luiz Felipe
 Turma: Butantã - Noturno | Universidade São Judas Tadeu | Ciência da Computação | Prof. Calvetti
+
 
 

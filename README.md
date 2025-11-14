@@ -16,20 +16,20 @@ Siga as etapas abaixo para executar a aplicação **Hamburgueria** no seu ambien
 
 ---
 
-### 1. Clone o repositório
-### 2. Entre na pasta do projeto: 
-## cd TrabalhoA3_GestaoEQualidade
-### 3. Crie o ambiente virtual: 
-## python3 -m venv venv
-### 4. Ative o ambiente virtual: 
-## MacOs: source venv/bin/activate
-## PowerShell: venv\Scripts\activate
-### 5. Instale as depêndencias: 
-## pip install -r requirements.txt
-### 6. Execute os testes (opcional)
-## pytest
-### 7. Rode o programa depois de achar o diretório correto: hamburgueria/src/main.py
-## Comando: python3 hamburgueria/src/main.py
+# 1. Clone o repositório
+# 2. Entre na pasta do projeto: 
+### cd TrabalhoA3_GestaoEQualidade
+# 3. Crie o ambiente virtual: 
+### python3 -m venv venv
+# 4. Ative o ambiente virtual: 
+### MacOs: source venv/bin/activate
+### PowerShell: venv\Scripts\activate
+# 5. Instale as depêndencias: 
+### pip install -r requirements.txt
+# 6. Execute os testes (opcional)
+### pytest
+# 7. Rode o programa depois de achar o diretório correto: hamburgueria/src/main.py
+### Comando: python3 hamburgueria/src/main.py
 
 ---
 
@@ -59,6 +59,7 @@ CARDÁPIO:
 git clone https://github.com/victorpaliari/TrabalhoA3_GestaoEQualidade.git
 ```bash
 python src/main.py
+
 
 
 

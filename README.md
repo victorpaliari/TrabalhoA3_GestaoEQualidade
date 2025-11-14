@@ -1,9 +1,6 @@
 # 🍔 Hamburgueria Bruttus 
 Trabalho A3 [Gestao E Qualidade de Software]
 
-<img width="638" height="514" alt="image" src="https://github.com/user-attachments/assets/43acb7ad-1a92-4499-bd3d-6ce831f38f30" />
-
-
 <p align="center">
   <img src="https://github.com/victorpaliari/TrabalhoA3_GestaoEQualidade/actions/workflows/tests.yml/badge.svg" alt="Tests status">
 </p>
@@ -35,15 +32,7 @@ Comando: python3 hamburgueria/src/main.py
 
 ### Exemplo de execução: 
 
-🍔 Bem-vindo à Hamburgueria!
-
-CARDÁPIO:
-1 - Hambúrguer Simples - R$12.00
-2 - Cheeseburguer - R$14.00
-3 - X-Bacon - R$16.00
-4 - Batata Frita - R$8.00
-5 - Refrigerante - R$6.00
-999 - Finalizar pedido
+<img width="638" height="514" alt="image" src="https://github.com/user-attachments/assets/43acb7ad-1a92-4499-bd3d-6ce831f38f30" />
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.13-blue?logo=python&logoColor=white" />
@@ -59,6 +48,7 @@ CARDÁPIO:
 git clone https://github.com/victorpaliari/TrabalhoA3_GestaoEQualidade.git
 ```bash
 python src/main.py
+
 
 
 

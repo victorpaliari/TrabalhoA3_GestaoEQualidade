@@ -62,11 +62,12 @@ O Hamburgueria Bruttus é um programa de terminal desenvolvido em Python que reg
 	└── README.md
 		
 👨‍💻 Autores
-• Victor Paliari
+•   Victor Paliari
 •	Gustavo Lausen
 •	Matheus Fusco
 •	Jonathan 
 Turma: Butantã - Noturno | Universidade São Judas Tadeu | Ciência da Computação | Prof. Calvetti
+
 
 
 

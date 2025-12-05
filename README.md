@@ -1,8 +1,16 @@
 🍔 Hamburgueria Bruttus
 
 Trabalho A3 — Gestão e Qualidade de Software
-Link da apresentação: https://www.canva.com/design/DAG6ru7xX-g/5CnUbcftFiY9W8lLm_8BiA/edit
-Link do relatório: https://docs.google.com/document/d/1kLCg0CkCmG2lD15vi0dPrbcjHBVnudcvNxE3MENTNfo/edit?pli=1&tab=t.0
+
+
+
+Link da apresentação:
+	
+	https://www.canva.com/design/DAG6ru7xX-g/5CnUbcftFiY9W8lLm_8BiA/edit?utm_content=DAG6ru7xX-g&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+Link do relatório:
+
+	https://docs.google.com/document/d/1kLCg0CkCmG2lD15vi0dPrbcjHBVnudcvNxE3MENTNfo/edit?pli=1&tab=t.0
 
 <p align="center">
   <img src="https://github.com/victorpaliari/TrabalhoA3_GestaoEQualidade/actions/workflows/tests.yml/badge.svg" alt="Tests status">
@@ -69,6 +77,7 @@ O Hamburgueria Bruttus é um programa de terminal desenvolvido em Python que reg
 •	Matheus Fusco
 •	Jonathan 
 Turma: Butantã - Noturno | Universidade São Judas Tadeu | Ciência da Computação | Prof. Calvetti
+
 
 
 
